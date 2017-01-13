@@ -22,9 +22,7 @@ Provides a set a widgets to build javascript application
 
 For preact, you will need to [configure some alias](https://preactjs.com/guide/switching-to-preact)
 
-- aphrodite
-
-`npm install --save aphrodite`
+- aphrodite (will be install by this package)
 
 ### Installation
 
@@ -34,6 +32,10 @@ Its currently not possible to install it through npm (comming)
 git clone git@github.com:francisl/baer-toolkit.git
 
 cd baer-toolkit
+
+npm install
+
+npm run build
 
 npm link
 
