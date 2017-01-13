@@ -1,16 +1,46 @@
-# Web based Desktop component built on reactjs
+# Web based Desktop component for react and preact
 
 Provides a set a widgets to build javascript application
 
 ## Goals
+- Build UI in a flash
+- No custom css or adding class to elements is required to build the application
 - Themable
 - Optimize for speed and size
 - Aligment, position and parameters inspire by native apps
 - Make it possible to build a UI graphically
 
-## Build
+## Installation
 
-`npm run build`
+### Requirements
+
+- react or preact
+
+`npm install --save aphrodite`
+
+`npm install --save preact preact-compat`
+
+For preact, you will need to [configure some alias](https://preactjs.com/guide/switching-to-preact)
+
+- aphrodite
+
+`npm install --save aphrodite`
+
+### Installation
+
+Its currently not possible to install it through npm (comming)
+
+```
+git clone git@github.com:francisl/baer-toolkit.git
+
+cd baer-toolkit
+
+npm link
+
+cd [your-project]
+
+npm link baer-toolkit
+```
 
 ## The system includes:
 - Layout 
