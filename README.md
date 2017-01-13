@@ -26,7 +26,7 @@ For preact, you will need to [configure some alias](https://preactjs.com/guide/s
 
 ### Installation
 
-Its currently not possible to install it through npm (comming)
+Its currently not possible to install it through npm (coming)
 
 ```
 git clone git@github.com:francisl/baer-toolkit.git
