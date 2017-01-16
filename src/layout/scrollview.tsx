@@ -1,15 +1,19 @@
-import React from 'react';
+import * as React from "react";
+import { StyleSheet, css } from 'aphrodite';
 
-const style = {
-    width: '100%',
-    height: '100%',
-    overflow: 'auto'
-}
+var styles = StyleSheet.create({
+    scrollViewCss: {
+        width: '100%',
+        height: '100%',
+        overflow: 'auto'
+    }
+    
+});
 
-const ScrollView = (props) => {
+const ScrollView = (props: {children: String}) => {
     const { children, ...otherProps } = props;
     return (
-        <div class="ScrollView" style={style} {...otherProps}>
+        <div className={css(styles.scrollViewCss)} {...otherProps}>
             {children}
         </div>
     );
