@@ -1,31 +1,21 @@
 import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
-import Button from './Button';
 import Welcome from './Welcome';
-import {ScrollView } from '../dist/index';
-
-const buttonStyles = {
-  border: '1px solid #eee',
-  borderRadius: 3,
-  backgroundColor: '#FFFFFF',
-  cursor: 'pointer',
-  fontSize: 15,
-  padding: '3px 10px',
-  margin: 10,
-};
+import ScrollView from '../es/layout/scrollview';
+import Button from '../es/widgets/button';
+import Input from '../es/widgets/input';
 
 const containerSizeStyles = {
-  width: '300px',
-  height: '200px'
+  width: '400px',
+  height: '120px'
 }
 
 storiesOf('ScrollView', module)
   .add('Basic', () => {
     const buttonList = [0,1,2,3,4,5,6,7,8,9,10].map(() => {
-        return (<button
-          style={buttonStyles}>
+        return (<Button>
           😀 😎 👍 💯
-        </button>);
+        </Button>);
       });
 
     return (<div style={containerSizeStyles}>
@@ -34,11 +24,36 @@ storiesOf('ScrollView', module)
     )
   });
 
-
 storiesOf('Button', module)
-  .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
+  .add('Basic', () => (
+    <Button>Hello Button</Button>
   ))
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
+  .add('Primary', () => (
+    <Button style="primary">Primary 👍</Button>
+  ))
+  .add('Warning', () => (
+    <Button style="warning">Warning 👍</Button>
+  ))
+  .add('Danger', () => (
+    <Button style="danger">Danger</Button>
+  ))
+  .add('Submit', () => (
+    <Button type="submit">Danger</Button>
+  ));
+
+  storiesOf('Input', module)
+  .add('Basic', () => (
+    <Input></Input>
+  ))
+  .add('Primary', () => (
+    <Input style="primary"></Input>
+  ))
+  .add('Warning', () => (
+    <Input style="warning"></Input>
+  ))
+  .add('Error', () => (
+    <Input style="error"></Input>
+  ))
+  .add('Password', () => (
+    <Input type="password"></Input>
   ));

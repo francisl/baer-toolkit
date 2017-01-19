@@ -62,7 +62,8 @@ npm link baer-toolkit
 ### Containers
 - [ ] Tab Switcher
 - [ ] GridView
-- [ ] ScrollView
+- [X] ScrollView
+- [ ] VerticalScrollView
 - [ ] ListView
 
 ### Menu/Nav
@@ -72,7 +73,7 @@ npm link baer-toolkit
 - [ ] TreeView
 - [ ] ActionBar
 
-### Components
+### Widgets
 - [ ] Input
 - [ ] Password
 - [ ] Date
@@ -85,9 +86,7 @@ npm link baer-toolkit
 - [ ] StatusBar
 - [ ] Slider
 - [ ] Spinner
-
-### Buttons
-- [ ] Button
+- [X] Button
 - [ ] Toggle
 - [ ] Dropdown
 - [ ] Checkbox
