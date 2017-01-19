@@ -1,5 +1,7 @@
 # Web based Desktop component for react and preact
 
+!!! This is a prototype/Work In progress. It will change, break things.
+
 Provides a set a widgets to build javascript application
 
 ## Goals
