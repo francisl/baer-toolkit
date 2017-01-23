@@ -4,16 +4,16 @@ import { theme, themeColors } from '../theme/index';
 
 const styles = StyleSheet.create({
     ButtonCss: {
-        alignItems: 'center',
         borderColor: themeColors.main,
         borderWidth: theme.borderWidth,
         borderStyle: theme.borderStyle,
-        'border-radius': theme.borderRadius,
+        borderRadius: theme.borderRadius,
         cursor: 'pointer',
-        display: 'inline-flex',
+        flexShrink: 0,
         fontFamily: 'Arial',
         fontWeight: 600,
         fontSize: 12,
+        height: '2rem',
         lineHeight: '1.8rem',
         letterSpacing: '0.1rem',
         margin: '0.5rem',
@@ -42,10 +42,10 @@ const styles = StyleSheet.create({
     }
 });
 
-interface buttonProps {
+export interface buttonProps {
     style?: string,
     type?: string,
-    children: string,
+    children?: string,
     onClick: any
 }
 

@@ -2,12 +2,14 @@ import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Welcome from './Welcome';
 import ScrollView from '../es/layout/scrollview';
+import HorizontalContainer from '../es/layout/horizontalcontainer';
 import Button from '../es/widgets/button';
 import Input from '../es/widgets/input';
 
 const containerSizeStyles = {
-  width: '400px',
-  height: '120px'
+  width: '450px',
+  height: '120px',
+  border: 'thin dashed pink'
 }
 
 storiesOf('ScrollView', module)
@@ -23,6 +25,29 @@ storiesOf('ScrollView', module)
     </div>
     )
   });
+
+storiesOf('HorizontalContainer', module)
+  .add('Basic', () => {
+    const buttonList = [0,1,2].map(() => {
+        return (<Button>
+          😀 😎 👍 💯
+        </Button>);
+      });
+
+    return (
+      <HorizontalContainer style={containerSizeStyles}>{buttonList}</HorizontalContainer>
+    );
+  }).add('Overflow', () => {
+    const buttonList = [0,1,2,3,4,5,6,7,8,9,10].map(() => {
+        return (<Button>
+          😀 😎 👍 💯
+        </Button>);
+      });
+
+    return (
+      <HorizontalContainer style={containerSizeStyles}>{buttonList}</HorizontalContainer>
+  )
+});
 
 storiesOf('Button', module)
   .add('Basic', () => (

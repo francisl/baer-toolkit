@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     }
 });
 
-interface inputProps {
+export interface inputProps {
     style?: string,
     type?: string
 }
