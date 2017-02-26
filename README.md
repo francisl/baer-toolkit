@@ -57,22 +57,22 @@ npm link baer
 
 ## Widgets
 
-### Layout
-- [ ] HorizontalView/VerticalView
-- [ ] SizeablePane
+### Layouts
+- [ ] HorizontalLayout/VerticalLayout
+- [ ] GridLayout
+- [ ] Spacer
 
 ### Containers
 - [ ] Tab Switcher
-- [ ] GridView
 - [X] ScrollView
-- [ ] VerticalScrollView
-- [ ] ListView
+- [ ] Frame
+- [ ] HorizontalScrollView
+- [ ] SplitPane
 
 ### Menu/Nav
 - [ ] Menu Bar
 - [ ] Toolbar
 - [ ] Grouped side menu
-- [ ] TreeView
 - [ ] ActionBar
 
 ### Widgets
@@ -100,6 +100,8 @@ npm link baer
 
 ### Data
 - [ ] Table
+- [ ] ListView
+- [ ] TreeView
 
 ### Window
 - [ ] alert
