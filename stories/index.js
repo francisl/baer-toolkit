@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Welcome from './Welcome';
-import ScrollView from '../es/layout/scrollview';
-import HorizontalContainer from '../es/layout/horizontalcontainer';
-import Button from '../es/widgets/button';
-import Input from '../es/widgets/input';
+import ScrollView from '../src/layout/scrollview';
+import HorizontalContainer from '../src/layout/horizontalcontainer';
+import Button from '../src/widgets/button';
+import Input from '../src/widgets/input';
 
 const containerSizeStyles = {
   width: '450px',
@@ -51,19 +51,19 @@ storiesOf('HorizontalContainer', module)
 
 storiesOf('Button', module)
   .add('Basic', () => (
-    <Button>Hello Button</Button>
+    <Button onClick={function(){alert('clicked')}}>Hello Button</Button>
   ))
   .add('Primary', () => (
-    <Button style="primary">Primary 👍</Button>
+    <Button primary onClick={function(){alert('clicked')}}>Primary 👍</Button>
   ))
   .add('Warning', () => (
-    <Button style="warning">Warning 👍</Button>
+    <Button warning>Warning 👍</Button>
   ))
   .add('Danger', () => (
-    <Button style="danger">Danger</Button>
+    <Button danger>Danger</Button>
   ))
   .add('Submit', () => (
-    <Button type="submit">Danger</Button>
+    <Button type="submit">Submit</Button>
   ));
 
   storiesOf('Input', module)
@@ -71,13 +71,13 @@ storiesOf('Button', module)
     <Input></Input>
   ))
   .add('Primary', () => (
-    <Input style="primary"></Input>
+    <Input primary></Input>
   ))
   .add('Warning', () => (
-    <Input style="warning"></Input>
+    <Input warning></Input>
   ))
   .add('Error', () => (
-    <Input style="error"></Input>
+    <Input error></Input>
   ))
   .add('Password', () => (
     <Input type="password"></Input>

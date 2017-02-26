@@ -31,9 +31,9 @@ For preact, you will need to [configure some alias](https://preactjs.com/guide/s
 Its currently not possible to install it through npm (coming)
 
 ```
-git clone git@github.com:francisl/baer-toolkit.git
+git clone git@github.com:francisl/baer.git
 
-cd baer-toolkit
+cd baer
 
 npm install
 
@@ -43,11 +43,11 @@ npm link
 
 cd [your-project]
 
-npm link baer-toolkit
+npm link baer
 ```
 
 ## The system includes:
-- Layout 
+- Layout
 - Containers
 - Menu/Navigation
 - Components (UI widgets)
@@ -108,7 +108,7 @@ npm link baer-toolkit
 
 ### Desktop Feature
 - [ ] menu
-- [ ] assistant 
+- [ ] assistant
 - [ ] file selection
 - [ ] print dialog
 
