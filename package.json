@@ -1,7 +1,7 @@
 {
-  "name": "baer-toolkit",
+  "name": "baer",
   "version": "1.0.0",
-  "description": "React Components and Style Library inspired by native application toolkit Edit",
+  "description": "React Components and Style Library inspired by native application Edit",
   "main": "dist/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -19,19 +19,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/francisl/baer-toolkit.git"
+    "url": "git+https://github.com/francisl/baer.git"
   },
   "keywords": [
     "React",
-    "UI",
-    "Toolkit"
+    "UI"
   ],
   "author": "Francis Lavoie",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/francisl/baer-toolkit/issues"
+    "url": "https://github.com/francisl/baer/issues"
   },
-  "homepage": "https://github.com/francisl/baer-toolkit#readme",
+  "homepage": "https://github.com/francisl/baer#readme",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
