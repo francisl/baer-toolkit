@@ -58,7 +58,7 @@ npm link baer
 ## Widgets
 
 ### Layouts
-- [ ] HorizontalLayout/VerticalLayout
+- [X] HorizontalLayout/VerticalLayout
 - [ ] GridLayout
 - [ ] Spacer
 

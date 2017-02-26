@@ -1,4 +1,3 @@
-// import * as React from "react";
 import { theme, themeColors } from '../theme/index';
 import styled, { css } from 'styled-components'
 
@@ -24,6 +23,7 @@ export default styled.button`
     border-style: ${theme.borderStyle};
     border-radius: ${theme.borderRadius};
     cursor: pointer;
+    display: block;
     flex-shrink: 0;
     font-family: 'Arial';
     font-weight: 600;
