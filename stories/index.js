@@ -23,34 +23,83 @@ storiesOf('ScrollView', module)
 
 storiesOf('Button', module)
   .add('Basic', () => (
-    <Button onClick={function(){alert('clicked')}}>Hello Button</Button>
-  ))
-  .add('Primary', () => (
-    <Button primary onClick={function(){alert('clicked')}}>Primary 👍</Button>
-  ))
-  .add('Warning', () => (
-    <Button warning>Warning 👍</Button>
-  ))
-  .add('Danger', () => (
-    <Button danger>Danger</Button>
-  ))
-  .add('Submit', () => (
-    <Button type="submit">Submit</Button>
-  ));
+      <div>
+          <Button onClick={function(){alert('clicked')}}>Hello Button</Button>
+          <pre><code>{`
+              <Button onClick={function(){alert('clicked')}}>
+                  Hello Button
+              </Button>
+              `}
+          </code></pre>
+        <br />
+        <Button primary onClick={function(){alert('clicked')}}>Primary 👍</Button>
+        <pre><code>{`
+            <Button primary onClick={function(){alert('clicked')}}>
+                Primary 👍
+            </Button>`}
+        </code></pre>
+        <br />
+        <Button warning>Warning 👍</Button>
+        <pre><code>{`
+            <Button warning>
+                Warning 👍
+            </Button>`}
+        </code></pre>
+        <br />
 
+        <Button danger>Danger</Button>
+        <pre><code>{`
+            <Button danger>
+                Danger
+            </Button>`}
+        </code></pre>
+        <br />
+
+        <Button type="submit">Submit</Button>
+        <pre><code>{`
+            <Button type="submit">
+                Submit
+            </Button>`}
+        </code></pre>
+        <br />
+    </div>
+  ))
   storiesOf('Input', module)
   .add('Basic', () => (
-    <Input></Input>
-  ))
-  .add('Primary', () => (
-    <Input primary></Input>
-  ))
-  .add('Warning', () => (
-    <Input warning></Input>
-  ))
-  .add('Error', () => (
-    <Input error></Input>
-  ))
-  .add('Password', () => (
-    <Input type="password"></Input>
+      <div>
+        <Input placeholder="basic"></Input>
+        <pre><code>{`
+            <Input placeholder="basic"></Input>
+            `}
+        </code></pre>
+        <br />
+
+        <Input disabled placeholder="disabled"></Input>
+        <pre><code>{`
+            <Input disabled placeholder="disabled"></Input>
+            `}
+        </code></pre>
+        <br />
+
+        <Input warning placeholder="warning"></Input>
+        <pre><code>{`
+            <Input warning placeholder="warning"></Input>
+            `}
+        </code></pre>
+        <br />
+
+        <Input error placeholder="error"></Input>
+        <pre><code>{`
+            <Input error placeholder="error"></Input>
+            `}
+        </code></pre>
+        <br />
+
+        <Input type="password" placeholder="password"></Input>
+        <pre><code>{`
+            <Input type="password" placeholder="password"></Input>
+            `}
+        </code></pre>
+        <br />
+    </div>
   ));

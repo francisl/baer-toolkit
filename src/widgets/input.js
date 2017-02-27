@@ -4,49 +4,50 @@ import styled, { css } from 'styled-components'
 const defaultCss = css`
     background-color: ${themeColors.mainInverse};
     color: ${themeColors.main};
-    border-color: ${themeColors.main};
-`;
-
-const primary = css`
-    background-color: ${themeColors.main};
-    color: ${themeColors.mainInverse};
+    border-color: rgb(200, 200, 200);
+    &:focus {
+        border-color: ${themeColors.main};
+    }
 `;
 
 const warning = css`
-    background-color: ${themeColors.warning};
+    background-color: ${themeColors.mainInverse};
     border-color: ${themeColors.warning};
-    color: ${themeColors.main};
+    color: ${themeColors.warning};
 `;
 
 const danger = css`
-    background-color: ${themeColors.danger};
+    background-color: ${themeColors.mainInverse};
     border-color: ${themeColors.danger};
-    color: ${themeColors.mainInverse};
+    color: ${themeColors.danger};
+`;
+
+const disabled = css`
+    background-color: rgb(220, 220, 220);
 `;
 
 export default styled.input`
-    align-items: 'center';
-    border-color: ${themeColors.main};
+    align-items: "center";
     border-width: ${theme.borderWidth};
     border-style: ${theme.borderStyle};
     border-radius': ${theme.borderRadius};
     cursor: pointer;
     display: inline-flex;
-    font-family: 'Arial';
-    font-weight: 600;
-    font-size: 12;
+    font-family: "Arial";
+    font-weight: normal;
+    font-size: 1.1rem;
     line-height: 1.8rem;
     letter-spacing: 0.1rem;
     margin: 0.5rem;
     outline: none;
     padding: 0rem 1rem;
     ${ props => {
-        if (props.primary) {
-            return primary;
-        } else if (props.warning) {
+        if (props.warning) {
             return warning;
         } else if (props.error) {
             return danger;
+        } else if (props.disabled) {
+            return disabled;
         } else {
             return defaultCss;
         }

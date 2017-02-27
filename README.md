@@ -1,4 +1,4 @@
-# Web based Desktop component for react and preact
+# Web based Desktop component for
 
 !!! This is a prototype/Work In progress. It will change, break things.
 
@@ -11,6 +11,7 @@ Provides a set a widgets to build javascript application
 - Optimize for speed and size
 - Aligment, position and parameters inspire by native apps
 - Make it possible to build a UI graphically
+- Support react and preact
 
 ## Installation
 
@@ -58,7 +59,7 @@ npm link baer
 ## Widgets
 
 ### Layouts
-- [X] HorizontalLayout/VerticalLayout
+- [X] Layout Horizontal/Vertical
 - [ ] GridLayout
 - [ ] Spacer
 

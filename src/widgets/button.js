@@ -25,9 +25,8 @@ export default styled.button`
     cursor: pointer;
     display: block;
     flex-shrink: 0;
-    font-family: 'Arial';
-    font-weight: 600;
-    font-size: 12;
+    font-family: "Arial";
+    font-weight: bold;
     height: 2rem;
     line-height: 1.8rem;
     letter-spacing: 0.1rem;
