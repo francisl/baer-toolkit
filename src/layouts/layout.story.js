@@ -12,33 +12,33 @@ const buttonList = [0,1,2,3,4,5,6,7,8,9,10].map(() => {
 });
 
 
-export default storiesOf('Layouts', module)
-  .add('Layout | Horizontal Default', () => {
-    return (
+export default () => (
+    <div>
+        <h2>Horizontal Default</h2>
         <div style={containerSizeStyles}>
             <Layout>{buttonList}</Layout>
         </div>
-    );
-}).add('Layout | Horizontal Centered', () => {
-    return (
-        <div style={containerSizeStyles}>
-            <Layout center>
-                <Button>Happy 😀 😎</Button>
-                <Button>Ok 👍</Button>
-            </Layout>
-        </div>
-  )
-}).add('Layout | Horizontal Right', () => {
-    return (
+
+        <br />
+        <h2>Horizontal Centered</h2>
+            <div style={containerSizeStyles}>
+                <Layout center>
+                    <Button>Happy 😀 😎</Button>
+                    <Button>Ok 👍</Button>
+                </Layout>
+            </div>
+
+        <br />
+        <h2>Horizontal Right</h2>
         <div style={containerSizeStyles}>
             <Layout right>
                 <Button>Happy 😀 😎</Button>
                 <Button>Ok 👍</Button>
             </Layout>
         </div>
-  )
-}).add('Layout | Vertical in Horizontal', () => {
-    return (
+
+        <br />
+        <h2>Vertical in Horizontal</h2>
         <div style={containerSizeStyles}>
             <Layout>
                 <Layout vertical center>
@@ -56,19 +56,19 @@ export default storiesOf('Layouts', module)
                 </Layout>
             </Layout>
         </div>
-  )
-}).add('Layout | vertical', () => {
-    return (
+
+        <br />
+        <h2>vertical</h2>
         <div style={containerSizeStyles}>
             <Layout vertical>{buttonList}</Layout>
         </div>
-  )
-}).add('Layout | vertical centered in horizontal', () => {
-    return (
+
+        <br />
+        <h2>vertical centered in horizontal</h2>
         <div style={containerSizeStyles}>
             <Layout center>
                 <Layout vertical>{buttonList}</Layout>
             </Layout>
         </div>
-  )
-});
+    </div>
+);
