@@ -1,6 +1,8 @@
 
 export const themeColors = {
-    main: '#0079B5',
+    main: 'rgb(160, 160, 160)',
+    backgroundContrast: 'rgb(250, 250, 250)',
+    default: 'rgb(200, 200, 200)',
     mainInverse: '#FFFFFF',
     contrast: '#E88E0C',
     warning: '#e0c949',

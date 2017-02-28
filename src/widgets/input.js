@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 const defaultCss = css`
     background-color: ${themeColors.mainInverse};
     color: ${themeColors.main};
-    border-color: rgb(200, 200, 200);
+    border-color: ${themeColors.default};
     &:focus {
         border-color: ${themeColors.main};
     }
@@ -23,7 +23,8 @@ const danger = css`
 `;
 
 const disabled = css`
-    background-color: rgb(220, 220, 220);
+    background-color: ${themeColors.backgroundContrast};
+    border-color: ${themeColors.default};
 `;
 
 export default styled.input`
