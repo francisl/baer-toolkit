@@ -27,6 +27,18 @@ For preact, you will need to [configure some alias](https://preactjs.com/guide/s
 
 - aphrodite (will be install by this package)
 
+## Documentation and Examples
+
+```
+git clone git@github.com:francisl/baer.git
+
+cd baer
+
+npm install
+
+npm run storybook
+```
+
 ### Installation
 
 Its currently not possible to install it through npm (coming)
