@@ -7,6 +7,7 @@ import scrollViewStory from '../src/containers/scrollview.story';
 import layoutStory from '../src/layouts/layout.story';
 import buttonStory from '../src/widgets/button.story';
 import inputStory from '../src/widgets/input.story';
+import labelStory from '../src/widgets/label.story';
 
 import { containerSizeStyles } from './config';
 
@@ -16,7 +17,8 @@ storiesOf('Containers', module)
 
 storiesOf('Widgets', module)
     .add('Button', buttonStory)
-    .add('Input', inputStory);
+    .add('Input', inputStory)
+    .add('Label', labelStory);
 
 storiesOf('Layouts', module)
     .add('layout', layoutStory);

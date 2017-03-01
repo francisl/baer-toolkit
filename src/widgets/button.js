@@ -34,7 +34,6 @@ export default styled.button`
     flex-shrink: 0;
     font-family: ${theme.font.default};
     font-size: ${theme.font.buttonSize};
-    font-weight: bolder;
     font-style: normal;
     font-variant-caps: small-caps;
     font-variant-ligatures: normal;
