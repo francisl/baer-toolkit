@@ -1,4 +1,4 @@
-import { theme, themeColors } from '../theme/index';
+import { theme, colors, themeColors } from '../theme/index';
 import styled, { css } from 'styled-components'
 
 const primary = css`
@@ -6,15 +6,22 @@ const primary = css`
     color: ${themeColors.mainInverse};
 `
 const warning = css`
-    background-color: ${themeColors.warning};
-    border-color: ${themeColors.warning};
-    color: ${themeColors.main};
+    background-color: ${themeColors.warning.buttonBackground};
+    border-color: ${themeColors.warning.borderColor};
+    color: ${themeColors.default.color};
 `;
 
 const danger = css`
     background-color: ${themeColors.danger};
     border-color: ${themeColors.danger};
     color: ${themeColors.mainInverse};
+`;
+
+const disabled = css`
+    border-color: ${themeColors.default.borderColor};
+    color: ${themeColors.default.borderColor};
+    background-color: ${colors.disabled};
+    cursor: not-allowed;
 `;
 
 export default styled.button`
@@ -25,10 +32,17 @@ export default styled.button`
     cursor: pointer;
     display: block;
     flex-shrink: 0;
-    font-family: "Arial";
-    font-weight: bold;
-    height: 2rem;
-    line-height: 1.8rem;
+    font-family: ${theme.font.default};
+    font-size: ${theme.font.buttonSize};
+    font-weight: bolder;
+    font-style: normal;
+    font-variant-caps: small-caps;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+
+    height: ${theme.height};
+    line-height: ${theme.lineHeight};
     letter-spacing: 0.1rem;
     margin: 0.5rem;
     outline: none;
@@ -44,6 +58,8 @@ export default styled.button`
             return warning;
         } else if (props.danger) {
             return danger;
+        } else if (props.disabled) {
+            return disabled;
         }
     }}
 `;

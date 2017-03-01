@@ -1,9 +1,7 @@
 import styled, { css } from 'styled-components'
 
-
 const verticalCss = css`
     align-items: ${ function(props) {
-        console.log('called ........... props : ', props);
         if (props.center) {
             return 'center';
         } else if (props.right) {

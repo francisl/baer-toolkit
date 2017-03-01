@@ -44,5 +44,14 @@ export default () => (
           </Button>`}
       </code></pre>
       <br />
+
+      <Button disabled>Disabled</Button>
+      <pre><code>{`
+          <Button disabled>
+              Disabled
+          </Button>`}
+      </code></pre>
+      <br />
   </div>
+
 );

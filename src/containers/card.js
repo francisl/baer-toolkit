@@ -3,7 +3,6 @@ import { theme, themeColors } from '../theme/index';
 
 const verticalCss = css`
     align-items: ${ function(props) {
-        console.log('called ........... props : ', props);
         if (props.center) {
             return 'center';
         } else if (props.right) {
@@ -23,10 +22,10 @@ const horizontalCss = css`
 
 export default styled.div`
     background-color: ${themeColors.backgroundContrast};
-    border-color: ${themeColors.default};
+    border-color: ${themeColors.default.borderColor};
     border-width: ${theme.borderWidth};
     border-style: ${theme.borderStyle};
-    border-radius': ${theme.borderRadius};
+    border-radius: ${theme.borderRadius};
     justify-content: ${ function(props) {
         if (props.center) {
             return 'center';
