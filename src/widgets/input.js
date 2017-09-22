@@ -28,7 +28,7 @@ const disabled = css`
 `;
 
 export default styled.input`
-    align-items: "center";
+    align-items: stretch;
     border-width: ${theme.borderWidth};
     border-style: ${theme.borderStyle};
     border-radius: ${theme.borderRadius};
@@ -42,7 +42,6 @@ export default styled.input`
     letter-spacing: 0.1rem;
     margin: 0.5rem;
     outline: none;
-    padding: 0rem 1rem;
     ${ props => {
         if (props.warning) {
             return warning;

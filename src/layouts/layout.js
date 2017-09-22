@@ -19,7 +19,7 @@ const verticalCss = css`
 const horizontalCss = css`
     align-items: center;
     display: inline-flex;
-    width: 100%;
+
 `;
 
 export default styled.div`
@@ -32,6 +32,7 @@ export default styled.div`
             return 'flex-start';
         }
     }};
+    display: inline-block;
     overflow: hidden;
     margin: 5px;
     ${ function(props) {
@@ -41,4 +42,5 @@ export default styled.div`
             return horizontalCss;
         }
     }};
+    width: 100%;
 `;

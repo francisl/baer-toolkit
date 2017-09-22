@@ -66,8 +66,8 @@ export default () => (
         <br />
         <h2>vertical centered in horizontal</h2>
         <div style={containerSizeStyles}>
-            <Layout center>
-                <Layout vertical>{buttonList}</Layout>
+            <Layout>
+                <Layout vertical center>{buttonList}</Layout>
             </Layout>
         </div>
     </div>

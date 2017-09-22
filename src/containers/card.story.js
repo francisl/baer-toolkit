@@ -36,7 +36,7 @@ export default () => (
         </code></pre>
 
         <h2>Simple form in a centered layout</h2>
-            <Card style={{padding: '1rem 2rem'}}>
+            <Card center style={{padding: '1rem 2rem'}}>
                 <Layout vertical center>
                     <Layout center>
                         <Label>Username</Label>
@@ -56,7 +56,7 @@ export default () => (
             {`
             <Layout center>
                 <Card style={{padding: '2rem'}}>
-                    <Layout vertical>
+                    <Layout vertical center>
                         <Input></Input>
                         <Input></Input>
                         <Button>Login</Button>
