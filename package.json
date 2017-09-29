@@ -15,6 +15,7 @@
     "build:watch": "webpack -w",
     "prebuild:es": "rimraf dist/es",
     "build:es": "babel src -d dist/es --ignore .story.,__stories__",
+    "build:es:watch": "babel src -d dist/es --ignore .story.,__stories__ --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepublish": "npm run build"

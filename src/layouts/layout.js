@@ -42,5 +42,7 @@ export default styled.div`
             return horizontalCss;
         }
     }};
-    width: 100%;
+    width: ${ function(props) {
+        return props.size || '100%';
+    }};
 `;
