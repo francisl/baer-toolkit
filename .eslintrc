@@ -10,6 +10,7 @@
     "consistent-return": 0,
     "complexity": [1, 10],
     "global-require": 0,
+    "indent": 4,
     "jsx-quotes": [2, "prefer-single"],
     "max-len": [2, 120, 4],
     "no-console": 2,
