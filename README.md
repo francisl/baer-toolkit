@@ -1,5 +1,7 @@
 # Web based Desktop component for
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8363dc6e003b4533bd4b3278854d746f)](https://www.codacy.com/app/francisl/baer?utm_source=github.com&utm_medium=referral&utm_content=francisl/baer&utm_campaign=badger)
+
 !!! This is a prototype/Work In progress. It will change, break things.
 
 Provides a set a layout to build JavaScript application like a native application with containers instead of using noisy grid system
